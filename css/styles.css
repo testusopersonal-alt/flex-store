@@ -3,7 +3,7 @@
     --white: #ffffff;
     --accent: #e8ff3c;
     --gray: #666666;
-    --green: #00ff2f;
+    --green: #00ff2f; /* Tu verde brillante */
 }
 
 * {
@@ -14,12 +14,12 @@
 
 body {
     background-color: var(--black);
-    color: var(--white);
+    color: var(--green); /* <--- Esto hace que todo el texto base sea verde */
     font-family: 'DM Sans', sans-serif;
     overflow-x: hidden;
 }
 
-/* Marca de Agua */
+/* Marca de Agua - La dejamos sutil para que no estorbe */
 .watermark {
     position: fixed;
     bottom: -5vw;
@@ -27,7 +27,7 @@ body {
     transform: translateX(-50%);
     font-family: 'Bebas Neue', sans-serif;
     font-size: 28vw;
-    color: rgba(255, 255, 255, 0.02);
+    color: rgba(0, 255, 47, 0.03); /* Verde muy transparente */
     z-index: -1;
     pointer-events: none;
     white-space: nowrap;
@@ -50,13 +50,13 @@ nav {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 1.8rem;
     letter-spacing: 4px;
-    color: var(--green)
+    color: var(--green);
 }
 
 .cart-btn {
     background: transparent;
-    color: var(--white);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--green);
+    border: 1px solid var(--green); /* Borde verde también */
     padding: 0.6rem 1.2rem;
     font-size: 0.7rem;
     letter-spacing: 2px;
@@ -65,7 +65,7 @@ nav {
 }
 
 .cart-btn:hover {
-    background: var(--white);
+    background: var(--green);
     color: var(--black);
 }
 
@@ -80,12 +80,14 @@ nav {
     font-size: clamp(4rem, 15vw, 10rem);
     line-height: 0.8;
     margin-bottom: 1rem;
+    color: var(--green);
 }
 
 .hero-minimal p {
     font-size: 0.8rem;
     letter-spacing: 5px;
-    color: var(--gray);
+    color: var(--green); /* Cambiado de gray a green */
+    opacity: 0.8; /* Un poco de transparencia para jerarquía */
 }
 
 /* Grid de Productos */
@@ -96,20 +98,15 @@ nav {
     padding: 2rem;
 }
 
-/* Slider Táctil */
-.product-card {
-    position: relative;
-}
-
 .product-slider {
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     aspect-ratio: 3 / 4;
+    border: 1px solid rgba(0, 255, 47, 0.1); /* Un toque verde al borde de la foto */
 }
 
-/* Esconder barra de scroll */
 .product-slider::-webkit-scrollbar {
     display: none;
 }
@@ -131,10 +128,12 @@ nav {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 1.4rem;
     letter-spacing: 1px;
+    color: var(--green);
 }
 
 .product-desc {
-    color: var(--gray);
+    color: var(--green);
+    opacity: 0.7; /* Para que sea legible pero se note que es descripción */
     font-size: 0.85rem;
     font-weight: 300;
     margin: 0.4rem 0 0.8rem;
@@ -143,7 +142,8 @@ nav {
 
 .product-price {
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    color: var(--green);
 }
 
 /* Footer */
@@ -152,16 +152,12 @@ footer {
     text-align: center;
     font-size: 0.7rem;
     letter-spacing: 2px;
-    color: var(--gray);
+    color: var(--green);
+    opacity: 0.6;
 }
 
-/* Responsive para Móviles */
+/* Responsive */
 @media (max-width: 600px) {
-    .products-grid {
-        grid-template-columns: 1fr;
-        padding: 1rem;
-    }
-    
     .hero-minimal h1 {
         font-size: 5.5rem;
     }
