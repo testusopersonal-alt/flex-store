@@ -14,7 +14,7 @@
     <nav>
         <div class="logo">FL3X</div>
         <div class="nav-right">
-            <button class="cart-btn">CART (0)</button>
+            <button class="cart-btn" onclick="toggleCart()">CART (<span id="cart-count">0</span>)</button>
         </div>
     </nav>
 
@@ -34,6 +34,7 @@
                     <h2 class="product-name">HEAVYWEIGHT TEE</h2>
                     <p class="product-desc">Oversized fit, 240 GSM organic cotton.</p>
                     <span class="product-price">Q180.00</span>
+                    <button class="add-to-cart" onclick="addToCart('HEAVYWEIGHT TEE', 180)">ADD TO CART</button>
                 </div>
             </article>
 
@@ -46,126 +47,31 @@
                     <h2 class="product-name">MODULAR HOODIE</h2>
                     <p class="product-desc">Boxy cut, brushed fleece interior.</p>
                     <span class="product-price">Q320.00</span>
+                    <button class="add-to-cart" onclick="addToCart('MODULAR HOODIE', 320)">ADD TO CART</button>
                 </div>
             </article>
 
-            <article class="product-card">
-                <div class="product-slider">
-                    <img src="https://images.unsplash.com/photo-1624371414361-e6e8ea01c1e6?q=80&w=600" alt="Frente">
-                    <img src="https://images.unsplash.com/photo-1591195853828-11db59a44f6b?q=80&w=600" alt="Espalda">
-                </div>
-                <div class="product-info">
-                    <h2 class="product-name">CARGO PANTS V1</h2>
-                    <p class="product-desc">Adjustable hem, technical fabric.</p>
-                    <span class="product-price">Q420.00</span>
-                </div>
-            </article>
-
-  <article class="product-card">
-                <div class="product-slider">
-                    <img src="https://images.unsplash.com/photo-1624371414361-e6e8ea01c1e6?q=80&w=600" alt="Frente">
-                    <img src="https://images.unsplash.com/photo-1591195853828-11db59a44f6b?q=80&w=600" alt="Espalda">
-                </div>
-                <div class="product-info">
-                    <h2 class="product-name">CARGO PANTS V1</h2>
-                    <p class="product-desc">Adjustable hem, technical fabric.</p>
-                    <span class="product-price">Q420.00</span>
-                </div>
-            </article>
-
-
-              <article class="product-card">
-                <div class="product-slider">
-                    <img src="https://images.unsplash.com/photo-1624371414361-e6e8ea01c1e6?q=80&w=600" alt="Frente">
-                    <img src="https://images.unsplash.com/photo-1591195853828-11db59a44f6b?q=80&w=600" alt="Espalda">
-                </div>
-                <div class="product-info">
-                    <h2 class="product-name">CARGO PANTS V1</h2>
-                    <p class="product-desc">Adjustable hem, technical fabric.</p>
-                    <span class="product-price">Q420.00</span>
-                </div>
-            </article>
-
-
-
-              <article class="product-card">
-                <div class="product-slider">
-                    <img src="https://images.unsplash.com/photo-1624371414361-e6e8ea01c1e6?q=80&w=600" alt="Frente">
-                    <img src="https://images.unsplash.com/photo-1591195853828-11db59a44f6b?q=80&w=600" alt="Espalda">
-                </div>
-                <div class="product-info">
-                    <h2 class="product-name">CARGO PANTS V1</h2>
-                    <p class="product-desc">Adjustable hem, technical fabric.</p>
-                    <span class="product-price">Q420.00</span>
-                </div>
-            </article>
-
-
-
-
-              <article class="product-card">
-                <div class="product-slider">
-                    <img src="https://images.unsplash.com/photo-1624371414361-e6e8ea01c1e6?q=80&w=600" alt="Frente">
-                    <img src="https://images.unsplash.com/photo-1591195853828-11db59a44f6b?q=80&w=600" alt="Espalda">
-                </div>
-                <div class="product-info">
-                    <h2 class="product-name">CARGO PANTS V1</h2>
-                    <p class="product-desc">Adjustable hem, technical fabric.</p>
-                    <span class="product-price">Q420.00</span>
-                </div>
-            </article>
-
-
-
-
-              <article class="product-card">
-                <div class="product-slider">
-                    <img src="https://images.unsplash.com/photo-1624371414361-e6e8ea01c1e6?q=80&w=600" alt="Frente">
-                    <img src="https://images.unsplash.com/photo-1591195853828-11db59a44f6b?q=80&w=600" alt="Espalda">
-                </div>
-                <div class="product-info">
-                    <h2 class="product-name">CARGO PANTS V1</h2>
-                    <p class="product-desc">Adjustable hem, technical fabric.</p>
-                    <span class="product-price">Q420.00</span>
-                </div>
-            </article>
-
-
-
-
-              <article class="product-card">
-                <div class="product-slider">
-                    <img src="https://images.unsplash.com/photo-1624371414361-e6e8ea01c1e6?q=80&w=600" alt="Frente">
-                    <img src="https://images.unsplash.com/photo-1591195853828-11db59a44f6b?q=80&w=600" alt="Espalda">
-                </div>
-                <div class="product-info">
-                    <h2 class="product-name">CARGO PANTS V1</h2>
-                    <p class="product-desc">Adjustable hem, technical fabric.</p>
-                    <span class="product-price">Q420.00</span>
-                </div>
-            </article>
-
-
-
-
-              <article class="product-card">
-                <div class="product-slider">
-                    <img src="https://images.unsplash.com/photo-1624371414361-e6e8ea01c1e6?q=80&w=600" alt="Frente">
-                    <img src="https://images.unsplash.com/photo-1591195853828-11db59a44f6b?q=80&w=600" alt="Espalda">
-                </div>
-                <div class="product-info">
-                    <h2 class="product-name">CARGO PANTS V1</h2>
-                    <p class="product-desc">Adjustable hem, technical fabric.</p>
-                    <span class="product-price">Q420.00</span>
-                </div>
-            </article>
-
-        </section>
+            </section>
     </main>
+
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h2>YOUR CART</h2>
+                <button onclick="toggleCart()" style="background:none; border:none; color:#00ff2f; cursor:pointer;">CLOSE [X]</button>
+            </div>
+            <div id="cart-items"></div>
+            <div class="cart-footer">
+                <p>TOTAL: <span id="cart-total">Q0.00</span></p>
+                <small style="opacity:0.5; display:block; margin-top:10px;">TOMA CAPTURA PARA WHATSAPP</small>
+            </div>
+        </div>
+    </div>
 
     <footer>
         <p>© 2026 FL3X STOREE — GUATEMALA</p>
     </footer>
 
+    <script src="java/script.js"></script>
 </body>
 </html>

@@ -1,9 +1,6 @@
 :root {
     --black: #0a0a0a;
-    --white: #ffffff;
-    --accent: #e8ff3c;
-    --gray: #666666;
-    --green: #00ff2f; /* Tu verde brillante */
+    --green: #00ff2f;
 }
 
 * {
@@ -14,12 +11,11 @@
 
 body {
     background-color: var(--black);
-    color: var(--green); /* <--- Esto hace que todo el texto base sea verde */
+    color: var(--green); /* Todo el texto verde como querías */
     font-family: 'DM Sans', sans-serif;
     overflow-x: hidden;
 }
 
-/* Marca de Agua - La dejamos sutil para que no estorbe */
 .watermark {
     position: fixed;
     bottom: -5vw;
@@ -27,13 +23,12 @@ body {
     transform: translateX(-50%);
     font-family: 'Bebas Neue', sans-serif;
     font-size: 28vw;
-    color: rgba(0, 255, 47, 0.03); /* Verde muy transparente */
+    color: rgba(0, 255, 47, 0.02);
     z-index: -1;
     pointer-events: none;
     white-space: nowrap;
 }
 
-/* Navegación */
 nav {
     display: flex;
     justify-content: space-between;
@@ -50,26 +45,18 @@ nav {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 1.8rem;
     letter-spacing: 4px;
-    color: var(--green);
 }
 
 .cart-btn {
     background: transparent;
     color: var(--green);
-    border: 1px solid var(--green); /* Borde verde también */
+    border: 1px solid var(--green);
     padding: 0.6rem 1.2rem;
     font-size: 0.7rem;
     letter-spacing: 2px;
     cursor: pointer;
-    transition: 0.3s;
 }
 
-.cart-btn:hover {
-    background: var(--green);
-    color: var(--black);
-}
-
-/* Hero */
 .hero-minimal {
     padding: 4rem 2rem;
     text-align: center;
@@ -79,18 +66,8 @@ nav {
     font-family: 'Bebas Neue', sans-serif;
     font-size: clamp(4rem, 15vw, 10rem);
     line-height: 0.8;
-    margin-bottom: 1rem;
-    color: var(--green);
 }
 
-.hero-minimal p {
-    font-size: 0.8rem;
-    letter-spacing: 5px;
-    color: var(--green); /* Cambiado de gray a green */
-    opacity: 0.8; /* Un poco de transparencia para jerarquía */
-}
-
-/* Grid de Productos */
 .products-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -102,63 +79,72 @@ nav {
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
     aspect-ratio: 3 / 4;
-    border: 1px solid rgba(0, 255, 47, 0.1); /* Un toque verde al borde de la foto */
 }
 
-.product-slider::-webkit-scrollbar {
-    display: none;
-}
+.product-slider::-webkit-scrollbar { display: none; }
 
 .product-slider img {
     flex: 0 0 100%;
     width: 100%;
     object-fit: cover;
     scroll-snap-align: start;
-    background-color: #1a1a1a;
 }
 
-/* Información del Producto */
-.product-info {
-    padding: 1.5rem 0;
-}
+.product-info { padding: 1.5rem 0; }
 
 .product-name {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 1.4rem;
-    letter-spacing: 1px;
-    color: var(--green);
 }
 
 .product-desc {
     color: var(--green);
-    opacity: 0.7; /* Para que sea legible pero se note que es descripción */
+    opacity: 0.6;
     font-size: 0.85rem;
-    font-weight: 300;
-    margin: 0.4rem 0 0.8rem;
-    max-width: 250px;
+    margin: 0.5rem 0;
 }
 
-.product-price {
-    font-weight: 500;
-    font-size: 1.2rem;
+/* Botón de agregar sutil para no romper el diseño */
+.add-to-cart {
+    width: 100%;
+    background: transparent;
+    border: 1px solid var(--green);
     color: var(--green);
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 0.8rem;
 }
 
-/* Footer */
+/* MODAL DEL CARRITO */
+.cart-modal {
+    display: none;
+    position: fixed;
+    top: 0; right: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.9);
+    z-index: 1000;
+}
+
+.cart-content {
+    background: var(--black);
+    width: 100%; max-width: 400px;
+    height: 100%; margin-left: auto;
+    padding: 2rem;
+    border-left: 1px solid var(--green);
+    display: flex; flex-direction: column;
+}
+
+.cart-item {
+    display: flex; justify-content: space-between;
+    padding: 15px 0; border-bottom: 1px solid rgba(0,255,47,0.1);
+}
+
 footer {
-    padding: 5rem 2rem 2rem;
+    padding: 5rem 2rem;
     text-align: center;
     font-size: 0.7rem;
-    letter-spacing: 2px;
-    color: var(--green);
     opacity: 0.6;
-}
-
-/* Responsive */
-@media (max-width: 600px) {
-    .hero-minimal h1 {
-        font-size: 5.5rem;
-    }
 }
