@@ -3,6 +3,7 @@
     --white: #ffffff;
     --accent: #e8ff3c;
     --gray: #666666;
+    --green: #00ff2f;
 }
 
 * {
@@ -49,6 +50,7 @@ nav {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 1.8rem;
     letter-spacing: 4px;
+    color: var(--green)
 }
 
 .cart-btn {
