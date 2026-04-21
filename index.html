@@ -3,116 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FL3X STORE — Streetwear</title>
+    <title>FL3X STORE — Minimal Streetwear</title>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+
+    <div class="watermark">fl3x_storee</div>
+
     <nav>
         <div class="logo">FL3X</div>
-        <ul class="nav-links">
-            <li><a href="#">Hombres</a></li>
-            <li><a href="#">Mujeres</a></li>
-            <li><a href="#">Colecciones</a></li>
-            <li><a href="#">Drops</a></li>
-        </ul>
-        <button class="nav-cart">Carrito (0)</button>
+        <div class="nav-right">
+            <button class="cart-btn">CART (0)</button>
+        </div>
     </nav>
 
-    <section class="hero">
-        <div class="hero-text">
-            <p class="hero-tag">Nueva temporada — SS25</p>
-            <h1 class="hero-title">VISTE<br>TU <span>ACTITUD</span></h1>
-            <p class="hero-sub">Streetwear diseñado para los que no siguen tendencias, las crean. Piezas limitadas, estilo sin límites.</p>
-            <div class="hero-btns">
-                <button class="btn-primary">Ver colección</button>
-                <button class="btn-ghost">Nuevos drops</button>
-            </div>
-        </div>
-        <div class="hero-visual">
-            <div class="hero-img-box">
-                <div class="placeholder-icon">FL3X</div>
-                <div class="hero-badge">New Drop</div>
-                <div class="hero-badge-2">SS25</div>
-            </div>
-        </div>
-    </section>
+    <main>
+        <header class="hero-minimal">
+            <h1>NEW DROPS</h1>
+            <p>SS/26 COLLECTION</p>
+        </header>
 
-    <div class="stats-bar">
-        <div class="stat"><div class="stat-num">500+</div><div class="stat-label">Clientes satisfechos</div></div>
-        <div class="stat"><div class="stat-num">12</div><div class="stat-label">Drops al año</div></div>
-        <div class="stat"><div class="stat-num">48h</div><div class="stat-label">Envío express</div></div>
-    </div>
-
-    <section class="section">
-        <div class="section-header">
-            <h2 class="section-title">PIEZAS <span>DESTACADAS</span></h2>
-            <span class="see-all">Ver todo →</span>
-        </div>
-        <div class="products-grid">
-            <div class="product-card">
-                <div class="product-img"><div class="product-icon">TEE</div><div class="product-tag-pill">Nuevo</div></div>
-                <div class="product-info">
-                    <div class="product-brand">FL3X Essentials</div>
-                    <div class="product-name">Oversized Tee — Washed Black</div>
-                    <div class="product-bottom"><div class="product-price">Q180</div><button class="add-btn">+</button></div>
+        <section class="products-grid">
+            <article class="product-card">
+                <div class="product-slider">
+                    <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?q=80&w=600" alt="Frente">
+                    <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=600" alt="Espalda">
                 </div>
-            </div>
-            <div class="product-card">
-                <div class="product-img" style="background:#1c1a14;"><div class="product-icon">HOOD</div><div class="product-tag-pill" style="background:#fff;color:#000;">Agotándose</div></div>
                 <div class="product-info">
-                    <div class="product-brand">FL3X Heavy</div>
-                    <div class="product-name">Heavyweight Hoodie — Sand</div>
-                    <div class="product-bottom"><div class="product-price"><span class="old">Q380</span>Q320</div><button class="add-btn">+</button></div>
+                    <h2 class="product-name">HEAVYWEIGHT TEE</h2>
+                    <p class="product-desc">Oversized fit, 240 GSM organic cotton.</p>
+                    <span class="product-price">Q180.00</span>
                 </div>
-            </div>
-            <div class="product-card">
-                <div class="product-img" style="background:#131820;"><div class="product-icon">CRGO</div></div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-slider">
+                    <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?q=80&w=600" alt="Frente">
+                    <img src="https://images.unsplash.com/photo-1556821921-252718e0018d?q=80&w=600" alt="Espalda">
+                </div>
                 <div class="product-info">
-                    <div class="product-brand">FL3X Bottoms</div>
-                    <div class="product-name">Cargo Pants — Midnight</div>
-                    <div class="product-bottom"><div class="product-price">Q420</div><button class="add-btn">+</button></div>
+                    <h2 class="product-name">MODULAR HOODIE</h2>
+                    <p class="product-desc">Boxy cut, brushed fleece interior.</p>
+                    <span class="product-price">Q320.00</span>
                 </div>
-            </div>
-        </div>
-    </section>
+            </article>
 
-    <div class="banner">
-        <div class="banner-text">
-            <h2>DROP MENSUAL<br>YA DISPONIBLE</h2>
-            <p>Piezas limitadas. Una vez que se van, se van.</p>
-        </div>
-        <button class="banner-btn">Ver el drop →</button>
-    </div>
-
-    <section class="categories">
-        <div class="section-header"><h2 class="section-title">CATEGORÍAS</h2></div>
-        <div class="cat-grid">
-            <div class="cat-card"><div class="cat-name">Camisetas</div><div class="cat-count">24 productos</div></div>
-            <div class="cat-card"><div class="cat-name">Hoodies</div><div class="cat-count">12 productos</div></div>
-            <div class="cat-card"><div class="cat-name">Bottoms</div><div class="cat-count">18 productos</div></div>
-            <div class="cat-card"><div class="cat-name">Accesorios</div><div class="cat-count">9 productos</div></div>
-        </div>
-    </section>
+            <article class="product-card">
+                <div class="product-slider">
+                    <img src="https://images.unsplash.com/photo-1624371414361-e6e8ea01c1e6?q=80&w=600" alt="Frente">
+                    <img src="https://images.unsplash.com/photo-1591195853828-11db59a44f6b?q=80&w=600" alt="Espalda">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">CARGO PANTS V1</h2>
+                    <p class="product-desc">Adjustable hem, technical fabric.</p>
+                    <span class="product-price">Q420.00</span>
+                </div>
+            </article>
+        </section>
+    </main>
 
     <footer>
-        <div>
-            <div class="footer-logo">FL3X</div>
-            <p class="footer-desc">Streetwear auténtico. Cada pieza diseñada con intención, para quienes viven sin límites.</p>
-        </div>
-        <div class="footer-col">
-            <h4>Tienda</h4>
-            <ul><li><a href="#">Hombres</a></li><li><a href="#">Mujeres</a></li><li><a href="#">Colecciones</a></li><li><a href="#">Drops</a></li></ul>
-        </div>
-        <div class="footer-col">
-            <h4>Ayuda</h4>
-            <ul><li><a href="#">Envíos</a></li><li><a href="#">Devoluciones</a></li><li><a href="#">Tallas</a></li><li><a href="#">Contacto</a></li></ul>
-        </div>
+        <p>© 2026 FL3X STOREE — GUATEMALA</p>
     </footer>
 
-    <div class="footer-bottom">
-        <p>© 2025 FL3X STORE. Todos los derechos reservados.</p>
-        <p>Hecho en Guatemala 🇬🇹</p>
-    </div>
 </body>
 </html>
