@@ -232,7 +232,7 @@
         
         // Luego se lo decimos a Supabase (La Base de Datos real)
         const { error } = await supabase
-            .from('contadores')
+            .from('contador')
             .update({ clicks: numeroActual + 1 })
             .eq('nombre', 'boton_principal');
             
