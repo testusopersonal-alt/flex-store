@@ -65,7 +65,7 @@ function CartModal({ cart, onClose, onRemove }) {
               <button onClick={copiarMensaje} className="pedido-btn">
                 {copiado ? '¡COPIADO!' : 'COPIAR MENSAJE'}
               </button>
-              <button onClick={() => window.open('https://www.instagram.com/fl3x_storee', '_blank')} className="ig-btn">
+              <button onClick={() => window.open('https://ig.me/m/fl3x_storee', '_blank')} className="ig-btn">
                 IR A INSTAGRAM
               </button>
             </>
