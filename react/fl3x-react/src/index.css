@@ -158,3 +158,62 @@ footer {
   font-size: 0.7rem;
   opacity: 0.6;
 }
+
+.nombre-input {
+  width: 100%;
+  background: transparent;
+  border: 1px solid var(--green);
+  color: var(--green);
+  padding: 0.6rem 1rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  margin-top: 1rem;
+  outline: none;
+}
+
+.nombre-input::placeholder {
+  color: rgba(0, 255, 47, 0.4);
+}
+
+.pedido-btn {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.8rem;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  background: var(--green);
+  color: var(--black);
+  border: none;
+  cursor: pointer;
+}
+
+.mensaje-box {
+  width: 100%;
+  background: transparent;
+  border: 1px solid rgba(0, 255, 47, 0.3);
+  color: var(--green);
+  padding: 1rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  resize: none;
+  height: 120px;
+  outline: none;
+}
+
+.ig-btn {
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.8rem;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  background: transparent;
+  color: var(--green);
+  border: 1px solid var(--green);
+  cursor: pointer;
+}
+
+
